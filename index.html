@@ -12,29 +12,38 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <section id="section01" class="demo">
-  <h1>What is your budget?</h1>
+      <h1>What is your budget?</h1>
+      <form>
+        <ul>
+          <li>
+            <input type="radio" name="budget" value="250">
+            <label for="250">0-$250</label>
+          </li>
+          <li>
+            <input type="radio" name="budget" value="500">
+            <label for="500">$250-$500</label>
+          </li>
+          <li>
+            <input type="radio" name="budget" value="1000">
+            <label for="1000">$500-$1000</label>
+          </li>
+          <li>
+            <input type="radio" name="budget" value="2000">
+            <label for="2000">$1000-$2000</label>
+          </li>
+          <li>
+            <input type="radio" name="budget" value="5000">
+            <label for="5000">$2000-$5000</label>
+          </li>
+        </ul>
+      </form>
+
   <a href="#section02"><span></span>Scroll</a>
-  <form>
-    <ul>
-      <li>
-        <input type="radio" name="budget" value="250">
-        <label for="250">0-$250</label>
-      </li>
-      <li>
-        <input type="radio" name="budget" value="500">
-        <label for="500">$250-$500</label>
-
-      </li>
-      <li>
-        <input type="radio" name="budget" value="1000">
-        <label for="1000">$500-$1000</label>
-
-      </li>
-    </ul>
-
-
-  </form>
   </section>
+
+
+
+
   <section id="section02" class="demo">
     <h1>Scroll Down Button #2</h1>
     <a href="#section03"><span></span>Scroll</a>

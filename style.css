@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,37 +16,48 @@ section {
   width: 100%;
   height: 100%;
 }
+
 section::after {
   position: absolute;
   bottom: 0;
   left: 0;
   content: '';
   width: 100%;
-  height: 80%;
-  background-color: lightblue;
+  height: 100%;
+  /* background-color: lightblue; */
   /* background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%); */
 }
 section h1 {
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 50%;
   z-index: 2;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  color: ##3f3c3c;
   font : normal 300 64px/1 'Playfair Display', sans-serif;
-  text-align: center;
+  text-align: justify;
   white-space: nowrap;
 }
 
+
 form {
+  position: relative;
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
+  z-index: 3;
+  top: 300px;
 }
 
-/* #section01 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg01.jpg) center center / cover no-repeat;}
-#section02 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg02.jpg) center center / cover no-repeat;}
+form ul {
+  text-align: left;
+  width: 30%;
+  margin: auto;
+  list-style-type: none;
+}
+
+#section01 {background-color: lightblue;}
+/* #section02 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg02.jpg) center center / cover no-repeat;}
 #section03 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg03.jpg) center center / cover no-repeat;}
 #section04 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg04.jpg) center center / cover no-repeat;}
 #section05 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg05.jpg) center center / cover no-repeat;}
@@ -54,6 +66,7 @@ form {
 #section08 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg08.jpg) center center / cover no-repeat;}
 #section09 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg09.jpg) center center / cover no-repeat;}
 #section10 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg10.jpg) center center / cover no-repeat;} */
+
 
 
 .demo a {
