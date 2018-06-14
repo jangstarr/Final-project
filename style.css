@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i'); */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 * {
@@ -35,7 +35,7 @@ section h1 {
   z-index: 2;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font : normal 300 64px/1 'Playfair Display', sans-serif;
+  font : normal 300 64px/1 'Raleway', sans-serif;
   text-align: justify;
   white-space: nowrap;
 }
@@ -56,16 +56,13 @@ form ul {
   list-style-type: none;
 }
 
-#section01 {background-color: lightblue;}
-/* #section02 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg02.jpg) center center / cover no-repeat;}
-#section03 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg03.jpg) center center / cover no-repeat;}
+#section01 {background-color: #add8e685;}
+#section02 { background-color: #90ee905c;}
+/* #section03 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg03.jpg) center center / cover no-repeat;}
 #section04 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg04.jpg) center center / cover no-repeat;}
 #section05 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg05.jpg) center center / cover no-repeat;}
 #section06 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg06.jpg) center center / cover no-repeat;}
-#section07 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg07.jpg) center center / cover no-repeat;}
-#section08 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg08.jpg) center center / cover no-repeat;}
-#section09 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg09.jpg) center center / cover no-repeat;}
-#section10 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg10.jpg) center center / cover no-repeat;} */
+#section07 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg07.jpg) center center / cover no-repeat;} */
 
 
 
@@ -82,6 +79,8 @@ form ul {
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
+  background-color: #8080809c;
+  border-radius: 15px;
 }
 .demo a:hover {
   opacity: .5;
