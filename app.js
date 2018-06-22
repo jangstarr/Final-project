@@ -20,7 +20,7 @@ var watchList = [
     strap: 'Nylon',
     date: 'No',
     price: 30,
-    photo: 'url',
+    photo: 'https://images-na.ssl-images-amazon.com/images/I/81mSzPyYVQL._UL1500_.jpg',
     link: 'https://www.amazon.com/Timex-Unisex-T2N651-Weekender-Slip-Thru/dp/B004VR9GCQ/ref=swr_wa_1_ses?th=1&psc=1',
   },
   {
@@ -31,8 +31,8 @@ var watchList = [
     strap: 'Leather',
     date: 'Yes',
     price: 122,
-    photo: 'url',
-    link: 'https://www.amazon.com/Orient-Bambino-Japanese-Automatic-Stainless/dp/B072K5JSF5/ref=cts_wa_3_vtp?pf_rd_m=ATVPDKIKX0DER&pf_rd_p=76154825667896829&pf_rd_r=e1ccdc16-6a05-11e8-9aef-318d67f390c4&pd_rd_wg=FI8sq&pf_rd_s=desktop-detail-softlines&pf_rd_t=40701&pd_rd_i=B072K5JSF5&pd_rd_w=pYrBp&pf_rd_i=desktop-detail-softlines&pd_rd_r=e1ccdc16-6a05-11e8-9aef-318d67f390c4&_encoding=UTF8',
+    photo: 'https://images-na.ssl-images-amazon.com/images/I/81qJgs%2BSJqL._UL1500_.jpg',
+    link: 'https://images-na.ssl-images-amazon.com/images/I/81qJgs%2BSJqL._UL1500_.jpg',
   },
   {
     name: 'Vostok Amphibian',
@@ -42,7 +42,7 @@ var watchList = [
     strap: 'Metal',
     date: 'Yes',
     price: 88,
-    photo: 'url',
+    photo: 'https://images-na.ssl-images-amazon.com/images/I/91F8C-K-eaL._UL1500_.jpg',
     link: 'https://www.amazon.com/Vostok-Amphibian-Military-Russian-420059/dp/B00TK56Q18/ref=sr_1_1',
   },
   {
@@ -53,7 +53,7 @@ var watchList = [
     strap: 'Leather',
     date: 'Yes',
     price: 160,
-    photo: 'url',
+    photo: 'https://images-na.ssl-images-amazon.com/images/I/810iLaIQ5qL._UL1500_.jpg',
     link: 'url',
   },
   {
@@ -64,7 +64,7 @@ var watchList = [
     strap: 'Mesh',
     date: 'Yes',
     price: 98,
-    photo: 'url',
+    photo: 'https://images-na.ssl-images-amazon.com/images/I/914GjstfizL._UL1500_.jpg',
     link: 'url',
   },
   {
@@ -75,72 +75,72 @@ var watchList = [
     strap: 'Nylon',
     date: 'Yes',
     price: 64,
-    photo: 'url',
+    photo: 'https://images-na.ssl-images-amazon.com/images/I/91EfTv79tML._UL1500_.jpg',
     link: 'url',
   },
   {
     name: 'Seiko Alpinist',
     priceRange: 2,
     style: 'Dressy',
-    dial: 'Blue',
-    strap: 'Nylon',
+    dial: 'Green',
+    strap: 'Leather',
     date: 'Yes',
-    price: 64,
+    price: 480,
     photo: 'url',
     link: 'url',
   },
   {
-    name: 'Seiko 5',
-    priceRange: 1,
+    name: 'Steinhart Ocean Vintage',
+    priceRange: 2,
     style: 'Casual',
-    dial: 'Blue',
-    strap: 'Nylon',
-    date: 'Yes',
-    price: 64,
+    dial: 'Black',
+    strap: 'Metal',
+    date: 'No',
+    price: 440,
     photo: 'url',
     link: 'url',
   },
   {
-    name: 'Seiko 5',
-    priceRange: 1,
+    name: 'Hamilton Khaki Field',
+    priceRange: 2,
     style: 'Casual',
-    dial: 'Blue',
-    strap: 'Nylon',
+    dial: 'Black',
+    strap: 'Leather',
     date: 'Yes',
-    price: 64,
+    price: 400,
     photo: 'url',
     link: 'url',
   },
   {
-    name: 'Seiko 5',
-    priceRange: 1,
-    style: 'Casual',
-    dial: 'Blue',
-    strap: 'Nylon',
+    name: 'Tissot Le Locle',
+    priceRange: 2,
+    style: 'Dressy',
+    dial: 'White',
+    strap: 'Leather',
     date: 'Yes',
-    price: 64,
+    price: 340,
     photo: 'url',
     link: 'url',
   },
   {
-    name: 'Seiko 5',
-    priceRange: 1,
-    style: 'Casual',
+    name: 'Glycine Combat 6',
+    priceRange: 2,
+    style: 'Dressy',
     dial: 'Blue',
-    strap: 'Nylon',
+    strap: 'Leather',
     date: 'Yes',
-    price: 64,
+    price: 449,
     photo: 'url',
     link: 'url',
   },
   {
-    name: 'Seiko 5',
-    priceRange: 1,
+    name: 'Certina DS Action',
+    priceRange: 2,
     style: 'Casual',
-    dial: 'Blue',
-    strap: 'Nylon',
+    dial: 'Grey',
+    strap: 'Metal',
     date: 'Yes',
-    price: 64,
+    price: 493,
     photo: 'url',
     link: 'url',
   },
@@ -195,12 +195,14 @@ function filterWatches(val) {
       filteredList.push(arr[i]);
     }
   }
+  return filteredList;
 }
 
 for (let i = 0; i < stylesNodes.length; i++) {
   var num = i;
   (function() {
     stylesNodes[num].addEventListener("change", function(e) {
+
       MY_WATCH.style = e.target.value;
 
     var filteredStyles = filterStyles("style");
@@ -237,8 +239,10 @@ function filterStyles(val) {
       filteredStyles.push(arr[i]);
     }
   }
+  return filteredStyles;
 }
 
+// show filtered watches based on dial choice
 for (let i = 0; i < dialNodes.length; i++) {
   var num = i;
   (function() {
@@ -247,7 +251,6 @@ for (let i = 0; i < dialNodes.length; i++) {
 
     var filteredDials = filterDials("dial");
     var straps = findUniqValues(filteredDials, "strap");
-    // show filtered watches based on dial choice
     console.log(filteredDials);
     // show available straps
     console.log(straps);
@@ -268,8 +271,6 @@ for (let i = 0; i < dialNodes.length; i++) {
 })();
 }
 
-
-
 // filter watches based on dial choice
 function filterDials(val) {
   var arr = watchList;
@@ -284,33 +285,93 @@ function filterDials(val) {
   return filteredDials;
 }
 
-// store date choice in MY_WATCH
+// show filtered watches based on strap choice
+for (let i = 0; i < strapNodes.length; i++) {
+  var num = i;
+  (function() {
+    strapNodes[num].addEventListener("change", function(e) {
+      MY_WATCH.strap = e.target.value;
+
+    var filteredStraps = filterStraps("strap");
+    var dates = findUniqValues(filteredStraps, "date");
+    // show filtered watches based on dial choice
+    console.log(filteredStraps);
+    // show available straps
+    console.log(dates);
+    // show my watch selections so far
+    console.log(MY_WATCH);
+
+    for (let l = 0; l < dateNodes.length; l++) {
+      const element = dateNodes[l];
+      element.disabled = true;
+      for (let m = 0; m < dateNodes.length; m++) {
+        const date = dates[m];
+        if (element.value === date) {
+          element.disabled = false;
+        }
+      }
+    }
+  });
+})();
+}
+
+function filterStraps(val) {
+  var arr = watchList;
+  var filteredStraps = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    var watch = arr[i];
+    if (watch[val] == MY_WATCH.strap && watch["dial"] == MY_WATCH.dial && watch["style"] == MY_WATCH.style && watch["priceRange"] == MY_WATCH.priceRange) {
+      filteredStraps.push(arr[i]);
+    }
+  }
+  return filteredStraps;
+}
+
+
+
 for (let i = 0; i < dateNodes.length; i++) {
   var num = i;
   (function() {
     dateNodes[num].addEventListener("change", function(e) {
       MY_WATCH.date = e.target.value;
-      finalWatch('date');
-      }
-    )
-  })
-};
+    // show my watch selections so far
+    console.log(MY_WATCH);
+
+  });
+})();
+}
 
 // generate watch on click
 $('.submit').click(function(){
-  console.log(MY_WATCH.result[MY_WATCH.result.length - 1])
-});
+  //console.log(MY_WATCH.result[MY_WATCH.result.length - 1])
+  var finalWatch = finalSearch("date");
+  var chosenWatch = $('.chosenWatch'), container;
+  console.log(finalWatch)
+
+  for (var key in finalWatch){
+      container = $('<div id="watch" class="container"></div>');
+      chosenWatch.append(container);
+      container.append('<div id="name">' + finalWatch[key].name +'</div>');
+      container.append('<div id="price">' + '$' + finalWatch[key].price +'</div>');
+      var img = document.createElement("img");
+      img.src = finalWatch[key].photo;
+      img.classList.add('image');
+      container.append(img);
+  }
+  });
 
 // store final watch in MY WATCH
-function finalWatch(val) {
+function finalSearch(val) {
   var arr = watchList;
-
+  var finalWatch = [];
   for (let i = 0; i < arr.length; i++) {
     var watch = arr[i];
-    if (watch[val] == MY_WATCH.date && watch["dial"] == MY_WATCH.dial && watch["style"] == MY_WATCH.style && watch["priceRange"] == MY_WATCH.priceRange) {
-      MY_WATCH.result.push(arr[i]);
+    if (watch[val] == MY_WATCH.date && watch["strap"] == MY_WATCH.strap && watch["dial"] == MY_WATCH.dial && watch["style"] == MY_WATCH.style && watch["priceRange"] == MY_WATCH.priceRange) {
+      finalWatch.push(arr[i]);
     }
   }
+    return finalWatch;
 };
 
 function isInArray(value, array) {
@@ -327,6 +388,9 @@ function findUniqValues(arr, val) {
   }
   return filteredResults;
 }
+
+// display object to front end
+
 
 
 $(function() {

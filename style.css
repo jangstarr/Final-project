@@ -1,6 +1,6 @@
 
 /* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i'); */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,800');
 
 * {
   margin: 0;
@@ -35,8 +35,8 @@ section h1 {
   z-index: 2;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font : normal 300 64px/1 'Raleway', sans-serif;
-  text-align: justify;
+  font : normal 500 64px/1 'Raleway', sans-serif;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -56,36 +56,130 @@ form ul {
   list-style-type: none;
 }
 
-#section01 {background-color: #add8e685;}
-#section02 { background-color: #90ee905c;}
-#section03 { background-color: #9c27b029;}
-#section04 { background-color: #2196f35e;}
-
+/* #section01 {background-color: #add8e685;} */
+/* #section02 { background-color: #90ee905c;} */
+/* #section03 { background-color: #9c27b029;} */
+/* #section04 { background-color: #2196f35e;} */
+/* #section05 { background-color: #cddc3942;} */
+/* #section06 { background-color: #0096881a;} */
+.box {
+  position: relative;
+}
+#section01 .box {
+  width: 60%;
+  height: 99%;
+  margin: auto;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  border-radius: 50px;
+  background-color: #add8e685;
+}
+#section02 .box {
+  width: 60%;
+  height: 99%;
+  margin: auto;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  border-radius: 50px;
+  background-color: #90ee905c;
+}
+#section03 .box {
+  width: 60%;
+  height: 99%;
+  margin: auto;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  border-radius: 50px;
+  background-color: #9c27b029;
+}
+#section04 .box {
+  width: 60%;
+  height: 99%;
+  margin: auto;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  border-radius: 50px;
+  background-color: #2196f35e;
+}
+#section05 .box {
+  width: 60%;
+  height: 99%;
+  margin: auto;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  border-radius: 50px;
+  background-color: #cddc3942;
+}
+#section06 .box {
+  width: 60%;
+  height: 99%;
+  margin: auto;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  border-radius: 50px;
+  background-color: #0096881a;
+}
 
 .demo a {
   position: absolute;
-  bottom: 20px;
+  top: 90%;
   left: 50%;
   z-index: 2;
   display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  font : normal 700 25px/1 'Raleway', sans-serif;
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
   background-color: #8080809c;
   border-radius: 15px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .demo a:hover {
   opacity: .5;
 }
 
-
-#section01 a {
-  padding-top: 60px;
+.chosenWatch {
+  position: relative;
+  top: 250px;
+  text-align: center;
+  margin: auto;
 }
+
+.image {
+  max-width: 200px;
+}
+
+#name {
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#price {
+  font-size: 40px;
+}
+
+/* #section01 a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
 #section01 a span {
   position: absolute;
   top: 0;
@@ -100,9 +194,7 @@ form ul {
   box-sizing: border-box;
 }
 
-#section02 a {
-  padding-top: 60px;
-}
+
 #section02 a span {
   position: absolute;
   top: 0;
@@ -131,9 +223,7 @@ form ul {
 
 
 
-#section03 a {
-  padding-top: 60px;
-}
+
 #section03 a span {
   position: absolute;
   top: 0;
@@ -207,9 +297,7 @@ form ul {
 
 
 
-#section04 a {
-  padding-top: 60px;
-}
+
 #section04 a span {
   position: absolute;
   top: 0;
@@ -248,9 +336,7 @@ form ul {
   }
 }
 
-#section05 a {
-  padding-top: 70px;
-}
+
 #section05 a span {
   position: absolute;
   top: 0;
@@ -295,9 +381,9 @@ form ul {
 
 
 
-#section06 a {
+/* #section06 a {
   padding-top: 70px;
-}
+} */
 #section06 a span {
   position: absolute;
   top: 0;
